@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Yo-Travel</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <nav class="menu">
+      <div>
+        <!-- Start: Logo --><a
+          class="logo"
+          style="font-family: Cookie, serif; font-size: 30px"
+          >Yo-Travel</a
+        ><!-- End: Logo -->
+        <div class="menu-right">
+          <a href="#">Home</a><a href="#ourpackage">Our Packages</a
+          ><a href="#callus">Call Us</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <section style="position: relative; margin-top: 89px">
+        <h1 class="text-center" style="font-size: 45px">
+          Your Trusted Travel Agent's
+        </h1>
+        <p class="fs-5 text-center">"Your happiness is our happiness"</p>
+        <div class="row">
+          <!-- Start: Autoslider Image -->
+          <div class="col">
+            <!-- Start: Image -->
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="assets/img/yk2.jpg" style="width: 100%" />
+                <div class="text"><span>Jalan - Jalan</span></div>
+              </div>
+              <div class="mySlides fade">
+                <img src="assets/img/yk1.jpg" style="width: 100%" />
+                <div class="text"><span>Liburan Yuk</span></div>
+              </div>
+            </div>
+            <!-- End: Image -->
+            <!-- Start: Indicator -->
+            <div style="text-align: center">
+              <span class="dot"></span><span class="dot"></span>
+            </div>
+            <!-- End: Indicator -->
+          </div>
+          <!-- End: Autoslider Image -->
+        </div>
+      </section>
+      <!-- Start: Our Package -->
+      <section id="ourpackage">
+        <div class="row mb-3 mt-5">
+          <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <h2 style="font-size: 45px">Our Packages</h2>
+            <p>
+              Nikmati layanan kami dengan memilih berbagai paket travel berikut
+            </p>
+          </div>
+        </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-body p-4">
+                <h4 class="card-title">Package A</h4>
+                <p class="card-text">
+                  Murah. Erat netus est hendrerit, nullam et quis ad cras
+                  porttitor iaculis. Bibendum vulputate cras aenean.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body p-4">
+                <h4 class="card-title">Package B</h4>
+                <p class="card-text">
+                  Meriah. Erat netus est hendrerit, nullam et quis ad cras
+                  porttitor iaculis. Bibendum vulputate cras aenean.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body p-4">
+                <h4 class="card-title">Package C</h4>
+                <p class="card-text">
+                  Terpercaya. Erat netus est hendrerit, nullam et quis ad cras
+                  porttitor iaculis. Bibendum vulputate cras aenean.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Our Package -->
+      <!-- Start: Call Us -->
+      <section id="callus">
+        <div class="row mb-3 mt-5">
+          <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <h2 style="font-size: 45px">Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+          </div>
+        </div>
+        <div
+          class="row d-flex d-lg-flex justify-content-center justify-content-lg-center"
+        >
+          <div class="col-6">
+            <div>
+              <form
+                class="border rounded shadow p-4"
+                method="post"
+                onsubmit="return validateForm()"
+                name="myForm"
+                action="#"
+              >
+                <!-- Start: Name -->
+                <div class="mb-3">
+                  <label class="form-label">Your Name:</label
+                  ><input
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    placeholder="First and last name"
+                  /><span class="text-danger" id="info-name"></span>
+                </div>
+                <!-- End: Name -->
+                <!-- Start: Email -->
+                <div class="mb-3">
+                  <label class="form-label">Email Address:</label
+                  ><input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    placeholder="example@mail.com"
+                  /><span class="text-danger" id="info-email"></span>
+                </div>
+                <!-- End: Email -->
+                <!-- Start: Option -->
+                <div class="mb-3">
+                  <label class="form-label">What are you interested in?</label
+                  ><select class="form-select" name="option" required="">
+                    <optgroup label="Select Option">
+                      <option value="1" selected="">Jatim Park 1</option>
+                      <option value="2">Jatim Park 2</option>
+                      <option value="3">Jatim Park 3</option>
+                    </optgroup></select
+                  ><span class="text-danger" id="info-option"></span>
+                </div>
+                <!-- End: Option -->
+                <div class="mb-3">
+                  <button class="btn btn-primary" type="submit">SEND</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Call Us -->
+    </div>
+    <!-- Start: Footer Multi Column -->
+    <footer class="mt-5">
+      <div class="container d-lg-flex justify-content-lg-center">
+        <div style="padding-top: 10px; padding-bottom: 10px">
+          <p class="text-muted mb-0">
+            Copyright © 2023 Yo-Travel by Yonis Kurniawan
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End: Footer Multi Column -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/slideshow.js"></script>
+    <script src="assets/js/validation.js"></script>
+  </body>
+</html>
