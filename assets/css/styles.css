@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  position: fixed;
+  background-color: #97d5c6;
+  padding: 10px 20px 10px 20px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.menu a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.menu a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu a {
+  cursor: pointer;
+}
+
+.menu-right {
+  float: right;
+}
+
+.menu-right a:hover {
+  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 500px) {
+  .menu a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+  height: 500px;
+  width: 500px;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  position: relative;
+}
+
+/* Caption text */
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #97d5c6;
+  color: white;
+  text-align: center;
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+.btn {
+  width: 100%;
+  background-color: navy;
+}
+
+@media screen and (max-width: 500px) {
+  .menu-right {
+    float: none;
+  }
+}
+
